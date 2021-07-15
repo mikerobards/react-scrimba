@@ -1,10 +1,34 @@
 import React from 'react'
-import MyInfo from "./components/MyInfo.jsx"
+import NavBar from './components/NavBar.jsx'
+import MainContent from './components/MainContent.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
     return (
-        <MyInfo /> >
+        <div>
+            <NavBar />
+            <MainContent />
+            <Footer />
+        </div>
     )
 }
 
 export default App
+
+// function App() {
+//     return (
+//         <div>
+//             <ul style={{listStyleType: "none"}}>
+//                 <li>
+//                     <input type="checkbox"/><span> laundry</span>
+//                 </li>
+//                 <li>
+//                     <input type="checkbox"/><span> grocery shopping</span>
+//                 </li>
+//                 <li>
+//                     <input type="checkbox"/><span> Code!</span>
+//                 </li>
+//             </ul>
+//         </div>
+//     )
+// }
