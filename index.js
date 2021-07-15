@@ -1,8 +1,38 @@
-import React from "react"
-import ReactDOM from "react-dom"
+// import React from "react"
+// import ReactDOM from "react-dom"
 
 // JSX
-ReactDOM.render(<div><h1>Hello world!</h1><p>This is a paragraph</p></div>, document.getElementById("root"))
+// ReactDOM.render(<div><h1>Hello world!</h1><p>This is a paragraph</p></div>, document.getElementById("root"))
 
-const myNewP = document.createElement("p")
-myNewP.innerHTML = "This is a paragraph."
+function MyApp() {
+    return (
+        <div>
+            <ul>
+                <li>Hamburgers</li>
+                <li>Hot Dogs</li>
+                <li>Sausages</li>
+            </ul>
+        </div>
+    )
+}
+
+function MyInfo() {
+    return (
+        <div>
+            <h1 style={{ color: "red", fontSize: "50px" }}>Mike Robards!</h1>
+            <p style={{ fontStyle: "italic" }}>Hello! I am a budding Front End Web Developer! I am self-taught, and currently learning Scrimba! I also have an identical twin who is a Senior Dev!</p>
+            <ul style={{ color: "blue", fontSize: "25px" }}>
+                <li>Paris</li>
+                <li>Hawaii</li>
+                <li>Costa Rica</li>
+            </ul>
+        </div>
+    )
+}
+
+
+ReactDOM.render(
+    <MyApp />,
+    document.getElementById('root')
+)
+
